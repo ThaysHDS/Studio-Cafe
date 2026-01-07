@@ -30,7 +30,7 @@ Design Responsivo: Adaptado para dispositivos móveis e desktop
 
 Em desenvolvimento
 
-Estrutura inicial criada. Implementação dos componentes em andamento.
+Estrutura inicial criada. Implementação dos componentes em andamento
 
 ---
 
