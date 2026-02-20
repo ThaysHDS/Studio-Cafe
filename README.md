@@ -1,5 +1,5 @@
 # Studio-Cafe
-O Studio Café é uma Single Page Application (SPA) desenvolvida com React, Tailwind CSS e Framer Motion, com foco em experiência visual, animações fluidas e design responsivo.
+O Studio Café é uma Single Page Application (SPA) desenvolvida com React, Tailwind CSS e Framer Motion, com foco em experiência visual, animações fluidas e design responsivo. Desenvolvido em parceria com o designer Lucas Rodrigues, o Studio Café traduz conceitos visuais contemporâneos em uma interface dinâmica, elegante e totalmente responsiva.
 
 ## Preview
 ![Studio Café Preview](./public/preview.png)
