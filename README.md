@@ -5,7 +5,7 @@ O Studio Café é uma Single Page Application (SPA) desenvolvida com React, Tail
 ![Studio Café Preview](./public/preview.png)
 
 ## Demonstração das Animações
-![Hero Carousel](./docs/carousel.gif)
+![Hero Carousel](./public/carousel.gif)
 
 ## Stack Tecnológica
 - React
