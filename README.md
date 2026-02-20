@@ -14,18 +14,18 @@ O Studio Café é uma Single Page Application (SPA) desenvolvida com React, Tail
 - Vite
 
 ## Como executar o projeto
-# Clone o repositório
+- Clone o repositório
 git clone https://github.com/seu-usuario/studio-cafe.git
 
-# Acesse a pasta
+- Acesse a pasta
 cd studio-cafe
 
-# Instale as dependências
+- Instale as dependências
 npm install
 
-# Rode o projeto
+- Rode o projeto
 npm run dev
 
-### Status do projeto
+## Status do projeto
 Em desenvolvimento.
 Estrutura base implementada com evolução contínua dos componentes e refinamento das animações.
