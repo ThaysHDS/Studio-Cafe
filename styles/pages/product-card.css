@@ -1,0 +1,254 @@
+/* ===== Product Section ===== */
+.product-section {
+  position: relative;
+  padding: 6rem 0;
+  background-color: #4B281C; /* coffee-950 */
+  overflow: hidden;
+}
+
+.watermark-text {
+  position: absolute;
+  top: 36%; /* antes estava 50% */
+  left: 50%;
+  transform: translateX(-50%); /* só centraliza horizontalmente */
+  font-size: 30rem;
+  opacity: 0.03;
+  pointer-events: none;
+  user-select: none;
+}
+
+@media (min-width: 1024px) {
+  .watermark-text {
+    font-size: 50rem;
+  }
+}
+
+/* Container */
+.container {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Header */
+.product-header {
+  text-align: center;
+  max-width: 768px;
+  margin: 0 auto 12rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.product-header .title {
+  font-family: 'Playfair Display', serif;
+  font-weight: 300;
+  font-size: 6rem;
+  color: rgba(255,255,255,0.95);
+}
+
+@media (min-width: 768px) {
+  .product-header .title {
+    font-size: 8rem;
+  }
+}
+
+.product-title {
+  font-family: 'Montserrat', sans-serif; /* Gotham */
+  font-weight: 300; /* Light */
+  font-style: normal; /* Não existe 'Light' no font-style, Light é weight */
+  font-size: 64px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.product-subtitle {
+  font-family: 'Montserrat', sans-serif; /* Gotham */
+  font-weight: 700; /* Bold */
+  font-style: normal; /* Bold é peso, não style */
+  font-size: 15px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.product-header .subtitle {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.125rem;
+  color: rgba(255,255,255,0.4);
+  line-height: 1.5;
+}
+
+.header-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  padding-top: 1rem;
+}
+
+.btn {
+  padding: 1rem 3rem;
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 9999px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 0.875rem;
+  color: #fff;
+  background: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  background-color: rgba(255,255,255,0.1);
+}
+
+.btn-icon {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.icon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+/* Grid */
+.product-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 6rem 1.5rem;
+  margin-top: 8rem;
+}
+
+@media (min-width: 640px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .product-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Product Card */
+.product-card {
+  position: relative;
+  background: #F2F2F2;
+  border-radius: 40px;
+  padding: 4rem 2rem 1.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 45px 90px -20px rgba(0,0,0,0.6);
+  transition: all 0.7s;
+  height: 100%;  
+}
+
+.product-card:hover {
+  transform: translateY(-1.5rem);
+}
+
+/* Product Image */
+.product-image-wrapper {
+  position: absolute;
+  top: -9rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 14rem;
+  height: 14rem;
+  transition: transform 0.7s;
+}
+
+.product-card:hover .product-image-wrapper {
+  transform: translateX(-50%) scale(1.1);
+}
+
+.product-image-circle {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.product-image-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.text-content {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  flex-grow: 1;           /* ocupa todo o espaço vertical disponível */
+}
+
+.coffee-name {
+  font-family: 'Open Sans', sans-serif; /* font-family */
+  font-weight: 700;                     /* Bold */
+  font-style: normal;                   /* Bold é weight, não style */
+  font-size: 16px;                      /* font-size */
+  line-height: 100%;                    /* line-height */
+  letter-spacing: 0%;                   /* letter-spacing */
+  text-align: center;                   /* alinhamento */
+  color: #000;
+  margin-bottom: 1rem;                  /* ajuste do espaçamento embaixo da descrição, opcional */
+}
+
+.coffee-description {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-style: normal;                   /* Regular é weight 400, não style */
+  font-size: 12px;  
+  color: rgba(0,0,0,0.6);
+  margin-bottom: 1rem;
+  max-width: 220px;
+  line-height: 1.8;
+}
+
+.coffee-price {
+  width: 240px; /* arredondei o valor exato */
+  height: 39px; /* arredondei o valor exato */
+  padding: 6px; /* top right bottom left */
+  border-radius: 46px;        /* borda arredondada */
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 16px;             /* ajustável se quiser maior */
+  line-height: 100%;
+  text-align: center;
+  color: #fff;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 19px;                   /* espaçamento interno caso tenha ícones */
+  box-shadow: 0 12px 24px rgba(0,0,0,0.3);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.coffee-price:hover {
+  background-color: #111;
+}
+
+.coffee-price:active {
+  transform: scale(0.95);
+}
+
+
+.coffee-price:hover {
+  background-color: #111;
+}
+
+.coffee-price:active {
+  transform: scale(0.95);
+}

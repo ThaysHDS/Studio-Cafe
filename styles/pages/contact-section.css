@@ -1,0 +1,88 @@
+.contact-section {
+  padding-top: 2.5rem; 
+  padding-bottom: 6rem; 
+  display: flex;
+  justify-content: center;
+}
+
+.contact-section-container {
+  width: 1144px;
+  height: 582px;
+  background: rgba(217, 217, 217, 0.4);
+  border-radius: 55px;
+  padding: 26px;
+  display: flex;
+  gap: 20px;
+  opacity: 1;
+  transform: rotate(0deg);
+  box-shadow: 0 25px 50px rgba(0,0,0,0.4);
+  overflow: hidden;
+  position: relative;
+}
+
+.contact-section-map {
+  flex: 1;
+  border-radius: 40px;
+  overflow: hidden;
+  min-height: 100%;
+  border: 1px solid rgba(255,255,255,0.05);
+}
+
+.contact-section-map-iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.contact-section-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contact-section-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-section-cta-wrapper {
+  margin-top: auto;
+}
+
+.contact-section-cta {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 2rem;
+  padding-right: 0.75rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  background: black;
+  color: white;
+  border-radius: 9999px; 
+  font-weight: bold;
+  box-shadow: 0 25px 50px rgba(0,0,0,0.6);
+  transition: background 0.3s;
+}
+
+.contact-section-cta:hover {
+  background: #18181b;
+}
+
+.contact-section-cta-icon {
+  width: 48px;
+  height: 48px;
+  background: white;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s;
+}
+
+.contact-section-cta:hover .contact-section-cta-icon {
+  transform: rotate(45deg);
+}
