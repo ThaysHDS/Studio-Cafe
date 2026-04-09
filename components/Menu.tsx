@@ -11,43 +11,43 @@ const menuData = {
       name: 'Caramelo Dourado',
       price: '$ 9,99',
       desc: 'Latte com calda artesanal de caramelo e final macio.',
-      img: './image/cardapio/caramelo-dourado.png',
+      img: '/image/cardapio/caramelo-dourado.png',
     },
     {
       name: 'Cappuccino Nuvem',
       price: '$ 9,99',
       desc: 'Textura leve e espumosa, com toque doce e irresistível.',
-      img: './image/cardapio/cappuccino-nuvem.png',
+      img: '/image/cardapio/cappuccino-nuvem.png',
     },
     {
       name: 'Mocha Harmonia',
       price: '$ 9,99',
       desc: 'Café, chocolate e leite vaporizado em uma combination que abraça.',
-      img: './image/cardapio/mocha-harmonia.png',
+      img: '/image/cardapio/mocha-harmonia.png',
     },
     {
       name: 'Blend Studio Café',
       price: '$ 9,99',
       desc: 'Nosso mix exclusivo de grãos, com notas achocolatadas e final suave.',
-      img: './image/cardapio/blend-studio.png',
+      img: '/image/cardapio/blend-studio.png',
     },
     {
       name: 'Espresso Raiz',
       price: '$ 9,99',
       desc: 'Clássico, intenso e aromático. O sabor puro do grão em sua essência.',
-      img: './image/cardapio/espresso-raiz.png',
+      img: '/image/cardapio/espresso-raiz.png',
     },
     {
       name: 'Latte Sereno',
       price: '$ 9,99',
       desc: 'Café suave com leite cremoso — perfeito para quem busca equilíbrio.',
-      img: './image/cardapio/latte-sereno.png',
+      img: '/image/cardapio/latte-sereno.png',
     },
     {
       name: 'Cold Brew Refrescante',
       price: '$ 9,99',
       desc: 'Extraído a frio por horas, trazendo suavidade e notas naturais mais doces.',
-      img: './image/cardapio/cold-brew.png',
+      img: '/image/cardapio/cold-brew.png',
     },
   ],
   paes: [
@@ -55,37 +55,37 @@ const menuData = {
       name: 'Pão Artesanal da Casa',
       price: '$ 9,99',
       desc: 'Macio, fresco e assado diariamente. Ideal para acompanhar o seu café.',
-      img: './image/cardapio/pao-artesanal.png',
+      img: '/image/cardapio/pao-artesanal.png',
     },
     {
       name: 'Croissant Neblina',
       price: '$ 9,99',
       desc: 'Camadas leves e amanteigadas que derretem na boca.',
-      img: './image/cardapio/croissant-neblina.png',
+      img: '/image/cardapio/croissant-neblina.png',
     },
     {
       name: 'Cookie ChocoChunk',
       price: '$ 9,99',
       desc: 'Pedaços generosos de chocolate nobre e centro macio.',
-      img: './image/cardapio/cookie-chocochunk.png',
+      img: '/image/cardapio/cookie-chocochunk.png',
     },
     {
       name: 'Cookie Canela & Açúcar',
       price: '$ 9,99',
       desc: 'Aroma acolhedor, leve crocância e sabor clássico da confeitaria artesanal.',
-      img: './image/cardapio/cookie-canela.png',
+      img: '/image/cardapio/cookie-canela.png',
     },
     {
       name: 'Brioche Doce Amanhecer',
       price: '$ 9,99',
       desc: 'Pão levemente adocicado, perfeito para acompanhar geleias e manteiga.',
-      img: './image/cardapio/brioche-doce-amanhecer.png',
+      img: '/image/cardapio/brioche-doce-amanhecer.png',
     },
     {
       name: 'Toast Crunchy',
       price: '$ 9,99',
       desc: 'Fatias crocantes com manteiga ou geleia — simples e delicioso.',
-      img: './image/cardapio/toast-crunchy.png',
+      img: '/image/cardapio/toast-crunchy.png',
     },
   ],
   porcoes: [
@@ -93,19 +93,19 @@ const menuData = {
       name: 'Mini Pão de Queijo',
       price: '$ 9,99',
       desc: 'Receita artesanal, crocante na casca e macio no interior.',
-      img: './image/cardapio/mini-pao-de-queijo.png',
+      img: '/image/cardapio/mini-pao-de-queijo.png',
     },
     {
       name: 'Tábua Aconchego',
       price: '$ 9,99',
       desc: 'Seleção de pães, queijos e acompanhamentos para compartilhar.',
-      img: './image/cardapio/tabua-aconchego.png',
+      img: '/image/cardapio/tabua-aconchego.png',
     },
     {
       name: 'Batatinhas da Casa',
       price: '$ 9,99',
       desc: 'Crocantes por fora, macias por dentro, servidas com molho especial.',
-      img: './image/cardapio/batatinhas-da-casa.png',
+      img: '/image/cardapio/batatinhas-da-casa.png',
     },
   ],
   nossosProdutos: [
@@ -113,25 +113,25 @@ const menuData = {
       name: 'Blend Studio Café',
       price: '$ 9,99',
       desc: 'Nosso mix exclusivo de grãos, com notas achocolatadas e final suave.',
-      img: './image/cardapio/blend-studio-cafe.png',
+      img: '/image/cardapio/blend-studio-cafe.png',
     },
     {
       name: 'Granola Crocante da Casa',
       price: '$ 9,99',
       desc: 'Feita with ingredientes naturais, perfeita para cafés da manhã e lanches.',
-      img: './image/cardapio/granola-crocante-da-casa.png',
+      img: '/image/cardapio/granola-crocante-da-casa.png',
     },
     {
       name: 'Mel Artesanal da Serra',
       price: '$ 9,99',
       desc: 'Sabor puro e aroma floral, ideal para adoçar cafés e chás.',
-      img: './image/cardapio/mel-artesanal-da-serra.png',
+      img: '/image/cardapio/mel-artesanal-da-serra.png',
     },
     {
       name: 'Calda Gourmet de Caramelo',
       price: '$ 9,99',
       desc: 'Produzida artesanalmente, cremosa e perfeita para sobremesas e bebidas.',
-      img: './image/cardapio/calda-gourmet.png',
+      img: '/image/cardapio/calda-gourmet.png',
     },
   ],
 };
@@ -181,7 +181,7 @@ export const Menu: React.FC<MenuProps> = ({ onExplore }) => {
     <div className="menu-page">
       <section className="relative h-screen overflow-hidden">
         <img
-          src="./image/cardapio/background-cafe.png"
+          src="/image/cardapio/background-cafe.png"
           alt="Coffee Theme"
           className="menu-hero-bg"
         />

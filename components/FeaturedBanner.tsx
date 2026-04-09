@@ -17,7 +17,7 @@ export const FeaturedBanner: React.FC = () => {
           <div className="lg:w-[45%] p-5 w-full h-full flex items-center">
             <div className="rounded-[40px] overflow-hidden w-full h-[320px] lg:h-[360px] shadow-lg">
               <img 
-                src="./image/home/produtos.png" 
+                src="/image/home/produtos.png" 
                 alt="Café e grãos selecionados" 
                 className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-[2000ms]"
               />

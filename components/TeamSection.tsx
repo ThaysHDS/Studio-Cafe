@@ -35,7 +35,7 @@ export const TeamSection: React.FC = () => {
   opacity-100 pointer-events-none"
       ></div>
       <div className="team-bg">
-        <img src="./image/home/equipe.png" alt="Coffee Shop" />
+        <img src="/image/home/equipe.png" alt="Coffee Shop" />
         <div className="team-overlay" />
       </div>
 

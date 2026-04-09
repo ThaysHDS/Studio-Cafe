@@ -7,7 +7,7 @@ export const OurSpace: React.FC = () => {
       <section className="relative h-screen flex items-center justify-center text-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
-            src="./image/espaco/espaco-background.png"
+            src="/image/espaco/espaco-background.png"
             alt="Cafe Interior"
             className="w-full h-full object-cover opacity-30"
           />
@@ -43,14 +43,14 @@ export const OurSpace: React.FC = () => {
             <div className="flex flex-col gap-8">
               <div className="rounded-[40px] overflow-hidden shadow-xl border border-white/5 h-[350px] group">
                 <img
-                  src="./image/espaco/espaco-casal.png"
+                  src="/image/espaco/espaco-casal.png"
                   alt="Espaço Studio Café 1"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000"
                 />
               </div>
               <div className="rounded-[40px] overflow-hidden shadow-xl border border-white/5 h-[315px] group">
                 <img
-                  src="./image/espaco/espaco-vitrine.png"
+                  src="/image/espaco/espaco-vitrine.png"
                   alt="Espaço Studio Café 2"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000"
                 />
@@ -59,7 +59,7 @@ export const OurSpace: React.FC = () => {
 
             <div className="rounded-[40px] overflow-hidden shadow-2xl border border-white/5 h-[700px] group">
               <img
-                src="./image/espaco/espaco-paes.png"
+                src="/image/espaco/espaco-paes.png"
                 alt="Espaço Studio Café 3"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000"
               />
@@ -69,7 +69,7 @@ export const OurSpace: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8 items-start">
             <div className="rounded-[40px] overflow-hidden shadow-2xl border border-white/5 h-[700px] group">
               <img
-                src="./image/espaco/espaco-total.png"
+                src="/image/espaco/espaco-total.png"
                 alt="Espaço Studio Café 4"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000"
               />
@@ -78,14 +78,14 @@ export const OurSpace: React.FC = () => {
             <div className="flex flex-col gap-8">
               <div className="rounded-[40px] overflow-hidden shadow-xl border border-white/5 h-[318px] group">
                 <img
-                  src="./image/espaco/espaco-balcao.png"
+                  src="/image/espaco/espaco-balcao.png"
                   alt="Espaço Studio Café 5"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000"
                 />
               </div>
               <div className="rounded-[40px] overflow-hidden shadow-xl border border-white/5 h-[350px] group">
                 <img
-                  src="./image/espaco/espaco-mesas.png"
+                  src="/image/espaco/espaco-mesas.png"
                   alt="Espaço Studio Café 6"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000"
                 />
@@ -98,7 +98,7 @@ export const OurSpace: React.FC = () => {
       <section className="relative h-screen flex items-center justify-end overflow-hidden pb-20">
         <div className="absolute inset-0 z-0">
           <img
-            src="./image/espaco/espaco-background.png"
+            src="/image/espaco/espaco-background.png"
             alt="Meeting Space Background"
             className="w-full h-full object-cover opacity-70"
           />

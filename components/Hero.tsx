@@ -315,7 +315,7 @@ export const Hero: React.FC<HeroProps> = ({ onExplore }) => {
         ))}
         <div className="absolute inset-0 opacity-20 mix-blend-screen pointer-events-none">
           <img
-            src="./image/home/produtos.png"
+            src="/image/home/produtos.png"
             className="w-full h-full object-cover animate-pulse"
             style={{ animationDuration: '10s' }}
             alt=""

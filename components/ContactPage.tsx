@@ -6,7 +6,7 @@ export const ContactPage: React.FC = () => {
     <div className="contact-page">
       <div className="contact-background">
         <img
-          src="./image/contato/background-contato.png"
+          src="/image/contato/background-contato.png"
           alt="São Paulo Skyline"
           className="contact-background-image"
         />
@@ -53,7 +53,7 @@ export const ContactPage: React.FC = () => {
 
                     <div className="contact-phone">
                       <img
-                        src="./image/contato/whatsapp.png"
+                        src="/image/contato/whatsapp.png"
                         alt="WhatsApp"
                       />
                       <span className="phone-text cursor-pointer">(11) 99873-4859</span>
@@ -61,7 +61,7 @@ export const ContactPage: React.FC = () => {
 
                     <div className="contact-phone">
                       <img
-                        src="./image/contato/telefone.png"
+                        src="/image/contato/telefone.png"
                         alt="Telefone"
                       />
                       <span className="phone-text">(11) 3873-4859</span>

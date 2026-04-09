@@ -100,7 +100,7 @@ export const Navbar: React.FC<NavbarProps> = ({ activeTab, onTabChange }) => {
           <div className="flex-1 flex justify-start items-center">
             <div onClick={() => handleLinkClick('home')} className="cursor-pointer group">
               <img
-                src="./image/logo.png"
+                src="/image/logo.png"
                 alt="Logo Studio Cafe"
                 className="h-16 w-auto transition-transform duration-300 group-hover:scale-105"
               />
