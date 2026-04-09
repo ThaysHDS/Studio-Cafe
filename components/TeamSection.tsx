@@ -9,8 +9,8 @@ const members = [
     bio: 'Mestra das interfaces modernas e responsivas, DOMINADORA do Front-End, unindo técnica, criatividade e empatia em cada pixel!',
     image: './image/home/thays.png',
     socials: {
-      fb: true,
-      ig: true,
+      fb: 'https://facebook.com',
+      ig: 'https://www.instagram.com/thayshds/',
       li: 'https://www.linkedin.com/in/thays-hds/',
     },
   },
@@ -20,8 +20,8 @@ const members = [
     bio: 'Conhecedor das mais poderosas forças conhecidas e não conhecidas pela raça humana. O TODO PODEROSO UX/UI designer!',
     image: './image/home/lucas.png',
     socials: {
-      fb: true,
-      ig: true,
+      fb: 'https://facebook.com',
+      ig: 'https://www.instagram.com/kindimstudio/',
       li: 'https://www.linkedin.com/in/lucas-rodrigues-17769912b/',
     },
   },
@@ -53,9 +53,27 @@ export const TeamSection: React.FC = () => {
               <p className="team-role">{member.role}</p>
 
               <div className="team-socials">
-                {member.socials.fb && <Facebook />}
-                {member.socials.ig && <Instagram />}
-                {member.socials.li && typeof member.socials.li === 'string' ? (
+                {member.socials.fb && (
+                  <a
+                    href={member.socials.fb}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Facebook />
+                  </a>
+                )}
+
+                {member.socials.ig && (
+                  <a
+                    href={member.socials.ig}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Instagram />
+                  </a>
+                )}
+
+                {member.socials.li && (
                   <a
                     href={member.socials.li}
                     target="_blank"
@@ -63,8 +81,6 @@ export const TeamSection: React.FC = () => {
                   >
                     <Linkedin />
                   </a>
-                ) : (
-                  member.socials.li && <Linkedin />
                 )}
               </div>
 
