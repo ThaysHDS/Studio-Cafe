@@ -4,13 +4,33 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Studio Café - O sabor que acolhe</title>
+
+  <title>Studio Café | Cafeteria aconchegante e café especial em São Paulo</title>
+  <meta name="description" content="Descubra o Studio Café em São Paulo: uma cafeteria aconchegante com cafés especiais, ambiente acolhedor e experiências únicas." />
+  <meta name="keywords" content="cafeteria em São Paulo, café especial, cafeteria aconchegante, café artesanal, coffee shop SP, Studio Café" />
+  <meta name="author" content="Studio Café" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://studio-cafe.vercel.app/" />
+
   <link rel="icon" type="image/svg+xml" href="/image/favicon.svg" />
 
-  <script src="https://cdn.tailwindcss.com"></script>
+  <meta property="og:title" content="Studio Café | O sabor que acolhe" />
+  <meta property="og:description" content="Café especial, ambiente aconchegante e experiências únicas em São Paulo." />
+  <meta property="og:image" content="https://studio-cafe.vercel.app/image/og-image.jpg" />
+  <meta property="og:url" content="https://studio-cafe.vercel.app/" />
+  <meta property="og:type" content="website" />
 
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&family=Open+Sans:wght@400;600;700&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap" rel="stylesheet">
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Studio Café | O sabor que acolhe" />
+  <meta name="twitter:description" content="Cafeteria aconchegante com cafés especiais em São Paulo." />
+  <meta name="twitter:image" content="https://studio-cafe.vercel.app/image/og-image.jpg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&family=Open+Sans:wght@400;600;700&family=Montserrat:wght@300;400;700&family=Grand+Hotel&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
 
   <script>
     tailwind.config = {
@@ -64,42 +84,63 @@
   </script>
 
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Studio Café",
-    "url": "https://www.seusite.com",
-    "logo": "https://www.seusite.com/logo.png",
-    "sameAs": [
-      "https://www.facebook.com/seu-perfil",
-      "https://www.instagram.com/seu-perfil",
-      "https://www.linkedin.com/in/seu-perfil"
-    ],
-    "employee": [
-      {
-        "@type": "Person",
-        "name": "Thays Henriques",
-        "jobTitle": "Construção Digital, Sistemas",
-        "image": "https://www.seusite.com/image/home/thays.png",
-        "description": "Mestra das interfaces modernas e responsivas, DOMINADORA do Front-End, unindo técnica, criatividade e empatia em cada pixel!",
-        "sameAs": "https://www.linkedin.com/in/thays-hds/"
-      },
-      {
-        "@type": "Person",
-        "name": "Lucas Rodrigues",
-        "jobTitle": "Direção de Arte, User Experience",
-        "image": "https://www.seusite.com/image/home/lucas.png",
-        "description": "Conhecedor das mais poderosas forces conhecidas e não conhecidas pela raça humana. O TODO PODEROSO UX/UI designer!",
-        "sameAs": "https://www.linkedin.com/in/lucas-rodrigues/"
-      }
-    ]
-  }
-  </script>
+{
+  "@context": "https://schema.org",
+  "@type": "CafeOrCoffeeShop",
+  "name": "Studio Café",
+  "image": "https://studio-cafe.vercel.app/image/og-image.jpg",
+  "url": "https://studio-cafe.vercel.app/",
+  "telephone": "+55 11 99999-9999",
+
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Rua Exemplo, 123",
+    "addressLocality": "São Paulo",
+    "addressRegion": "SP",
+    "postalCode": "00000-000",
+    "addressCountry": "BR"
+  },
+
+  "servesCuisine": "Café Especial",
+  "priceRange": "$$",
+  "openingHours": "Mo-Sa 08:00-20:00",
+
+  "founder": [
+    {
+      "@type": "Person",
+      "name": "Thays Henriques",
+      "jobTitle": "Front-End Developer",
+      "image": "https://studio-cafe.vercel.app/image/home/thays.png",
+      "sameAs": "https://www.linkedin.com/in/thays-hds/"
+    },
+    {
+      "@type": "Person",
+      "name": "Lucas Rodrigues",
+      "jobTitle": "UX/UI Designer",
+      "image": "https://studio-cafe.vercel.app/image/home/lucas.png",
+      "sameAs": "https://www.linkedin.com/in/lucas-rodrigues/"
+    }
+  ],
+
+  "sameAs": [
+    "https://www.instagram.com/seu-perfil"
+  ]
+}
+</script>
+
 </head>
 
 <body class="custom-scroll">
+
+  <noscript>
+    <h1>Studio Café - Cafeteria em São Paulo</h1>
+    <p>Uma cafeteria aconchegante com cafés especiais e experiências únicas.</p>
+  </noscript>
+
   <div id="root"></div>
+
   <script type="module" src="/index.tsx"></script>
+
 </body>
 
 </html>
