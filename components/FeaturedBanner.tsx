@@ -6,7 +6,7 @@ export const FeaturedBanner: React.FC = () => {
     <section className="py-12 md:py-16 bg-coffee-950">
       <div className="container mx-auto px-4 md:px-8 lg:px-12 max-w-[1300px]">
         <div className="text-center mb-8 md:mb-10">
-          <h2 className="title text-white/90 tracking-tight text-2xl md:text-3xl lg:text-4xl">
+          <h2 className="product-title tracking-tight">
             Conheça nossos produtos
           </h2>
         </div>

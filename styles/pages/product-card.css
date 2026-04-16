@@ -1,36 +1,28 @@
-/* ===== Product Section ===== */
 .product-section {
   position: relative;
-  padding: 6rem 0;
-  background-color: #4B281C; /* coffee-950 */
+  padding: clamp(3rem, 8vw, 6rem) 0;
+  background-color: #4B281C;
   overflow: hidden;
 }
 
 .watermark-text {
   position: absolute;
-  top: 36%; /* antes estava 50% */
+  top: 30%;
   left: 50%;
-  transform: translateX(-50%); /* só centraliza horizontalmente */
-  font-size: 30rem;
+  transform: translateX(-50%);
+  font-size: clamp(8rem, 25vw, 30rem);
   opacity: 0.03;
   pointer-events: none;
   user-select: none;
 }
 
-@media (min-width: 1024px) {
-  .watermark-text {
-    font-size: 50rem;
-  }
-}
-
-/* Container */
 .container {
   position: relative;
-  max-width: 800px;
+  max-width: 1200px;
+  width: 90%;
   margin: 0 auto;
 }
 
-/* Header */
 .product-header {
   text-align: center;
   max-width: 768px;
@@ -38,6 +30,7 @@
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
+  margin-bottom: clamp(4rem, 10vw, 12rem);
 }
 
 .product-header .title {
@@ -47,30 +40,26 @@
   color: rgba(255,255,255,0.95);
 }
 
-@media (min-width: 768px) {
-  .product-header .title {
-    font-size: 8rem;
-  }
-}
-
 .product-title {
-  font-family: 'Montserrat', sans-serif; /* Gotham */
-  font-weight: 300; /* Light */
-  font-style: normal; /* Não existe 'Light' no font-style, Light é weight */
-  font-size: 64px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: clamp(2rem, 5vw, 4rem); 
   line-height: 100%;
   letter-spacing: 0%;
   text-align: center;
 }
 
 .product-subtitle {
-  font-family: 'Montserrat', sans-serif; /* Gotham */
-  font-weight: 700; /* Bold */
-  font-style: normal; /* Bold é peso, não style */
-  font-size: 15px;
-  line-height: 100%;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: clamp(0.9rem, 2.5vw, 1rem);
+  line-height: 1.5;
   letter-spacing: 0%;
   text-align: center;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 .product-header .subtitle {
@@ -117,32 +106,18 @@
   height: 1.25rem;
 }
 
-/* Grid */
 .product-grid {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 6rem 1.5rem;
-  margin-top: 8rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 4rem 1.5rem;
+  margin-top: clamp(4rem, 10vw, 8rem);
 }
 
-@media (min-width: 640px) {
-  .product-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (min-width: 1024px) {
-  .product-grid {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-
-/* Product Card */
 .product-card {
   position: relative;
   background: #F2F2F2;
-  border-radius: 40px;
-  padding: 4rem 2rem 1.5rem 2rem;
+  border-radius: 24px;
+  padding: 3rem 1.5rem 1.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -156,14 +131,13 @@
   transform: translateY(-1.5rem);
 }
 
-/* Product Image */
 .product-image-wrapper {
   position: absolute;
-  top: -9rem;
+  top: -8rem;
   left: 50%;
   transform: translateX(-50%);
-  width: 14rem;
-  height: 14rem;
+  width: clamp(120px, 40vw, 200px);
+  height: clamp(120px, 40vw, 200px);
   transition: transform 0.7s;
 }
 
@@ -189,25 +163,24 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  flex-grow: 1;           /* ocupa todo o espaço vertical disponível */
+  flex-grow: 1;
 }
 
 .coffee-name {
-  font-family: 'Open Sans', sans-serif; /* font-family */
-  font-weight: 700;                     /* Bold */
-  font-style: normal;                   /* Bold é weight, não style */
-  font-size: 16px;                      /* font-size */
-  line-height: 100%;                    /* line-height */
-  letter-spacing: 0%;                   /* letter-spacing */
-  text-align: center;                   /* alinhamento */
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
   color: #000;
-  margin-bottom: 1rem;                  /* ajuste do espaçamento embaixo da descrição, opcional */
+  margin-bottom: 1rem; 
 }
 
 .coffee-description {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
-  font-style: normal;                   /* Regular é weight 400, não style */
+  font-style: normal;
   font-size: 12px;  
   color: rgba(0,0,0,0.6);
   margin-bottom: 1rem;
@@ -216,13 +189,13 @@
 }
 
 .coffee-price {
-  width: 240px; /* arredondei o valor exato */
-  height: 39px; /* arredondei o valor exato */
-  padding: 6px; /* top right bottom left */
-  border-radius: 46px;        /* borda arredondada */
+  width: 100%;
+  height: 39px;
+  padding: 6px;
+  border-radius: 46px; 
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
-  font-size: 16px;             /* ajustável se quiser maior */
+  font-size: 0.9rem;
   line-height: 100%;
   text-align: center;
   color: #fff;
@@ -230,10 +203,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 19px;                   /* espaçamento interno caso tenha ícones */
+  gap: 19px;
   box-shadow: 0 12px 24px rgba(0,0,0,0.3);
   cursor: pointer;
   transition: all 0.3s;
+  max-width: 220px;
 }
 
 .coffee-price:hover {
@@ -251,4 +225,89 @@
 
 .coffee-price:active {
   transform: scale(0.95);
+}
+
+@media (min-width: 640px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .header-buttons {
+    flex-direction: row;
+  }
+  .product-header .title {
+    font-size: 8rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .product-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .watermark-text {
+    font-size: 50rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .product-header {
+    margin-bottom: 2.5rem;
+    gap: 1rem;
+    padding: 0 12px;
+  }
+
+  .product-title {
+    margin: 0;
+    line-height: 1.2;
+  }
+
+  .product-subtitle {
+    margin: 0;
+    line-height: 1.5;
+    max-width: 100%;
+  }
+
+  .header-buttons {
+    margin-top: 0.5rem;
+    gap: 0.75rem;
+  }
+
+  .btn,
+  .btn-icon {
+    width: 80%;
+    justify-content: center;
+  }
+
+  .product-grid {
+    grid-template-columns: 1fr;
+    gap: 4rem; 
+    margin-top: 3rem;
+  }
+
+  .product-card {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 2.4rem 1.2rem 1.4rem;
+    border-radius: 20px;
+  }
+
+  .product-image-wrapper {
+    width: 95px;
+    height: 95px;
+    top: -3rem;
+  }
+
+  .coffee-name {
+    font-size: 0.95rem;
+  }
+
+  .coffee-description {
+    font-size: 0.8rem;
+    line-height: 1.4;
+  }
+
+  .coffee-price {
+    font-size: 0.8rem;
+    padding: 7px 14px;
+  }
 }
